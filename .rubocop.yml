@@ -11,6 +11,9 @@ Layout/IndentationStyle:
   EnforcedStyle: spaces
 Layout/LineLength:
   Max: 120
+  
+Lint/ScriptPermission:
+  Enabled: false
 
 Naming/MethodParameterName:
   Enabled: false
