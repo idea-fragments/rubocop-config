@@ -2,6 +2,12 @@ require: rubocop-rspec
 
 AllCops:
   TargetRubyVersion: 2.6
+  Exclude:
+    - "Gemfile"
+    - "Rakefile"
+    - "bin/*"
+    - "db/**/*"
+    - "config.ru"
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
@@ -13,7 +19,9 @@ Layout/IndentationStyle:
   EnforcedStyle: spaces
 Layout/LineLength:
   Max: 120
-
+Layout/MultilineBlockLayout:
+  Exclude:
+    - "spec/**/*_spec.rb"
 Lint/MissingSuper:
   Enabled: false
 Lint/ScriptPermission:
@@ -25,6 +33,8 @@ Metrics/BlockLength:
     - "*.gemspec"
 
 Naming/MethodParameterName:
+  Enabled: false
+Naming/PredicateName:
   Enabled: false
 
 Style/ClassAndModuleChildren:
@@ -38,6 +48,10 @@ Style/FrozenStringLiteralComment:
 Style/MultilineIfModifier:
   Enabled: false
 Style/MultilineTernaryOperator:
+  Enabled: false
+Style/OneLineConditional:
+  Enabled: false
+Style/RaiseArgs:
   Enabled: false
 Style/StringLiterals:
   Enabled: true
@@ -61,13 +75,21 @@ RSpec/DescribedClass:
   Enabled: false
 RSpec/ExampleLength:
   Enabled: false
+RSpec/ExampleWording:
+  Enabled: false
 RSpec/ExpectInHook:
+  Enabled: false
+RSpec/ImplicitExpect:
+  Enabled: false
+RSpec/ImplicitSubject:
   Enabled: false
 RSpec/MessageSpies:
   Enabled: false
 RSpec/MultipleExpectations:
   Enabled: false
 RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+RSpec/NotToNot:
   Enabled: false
 RSpec/ReceiveCounts:
   Enabled: false
