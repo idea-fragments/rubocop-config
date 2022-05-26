@@ -27,6 +27,8 @@ Layout/LineLength:
 Layout/MultilineBlockLayout:
   Exclude:
     - "spec/**/*_spec.rb"
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 Lint/MissingSuper:
   Enabled: false
 Lint/ScriptPermission:
