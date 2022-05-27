@@ -27,6 +27,8 @@ Layout/LineLength:
 Layout/MultilineBlockLayout:
   Exclude:
     - "spec/**/*_spec.rb"
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
 Lint/MissingSuper:
   Enabled: false
 Lint/ScriptPermission:
@@ -81,6 +83,8 @@ RSpec/DescribedClass:
 RSpec/ExampleLength:
   Enabled: false
 RSpec/ExampleWording:
+  Enabled: false
+RSpec/ExpectChange:
   Enabled: false
 RSpec/ExpectInHook:
   Enabled: false
