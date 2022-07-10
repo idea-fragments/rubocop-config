@@ -40,6 +40,8 @@ Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
     - "*.gemspec"
+Metrics/MethodLength:
+  Enabled: false
 
 Naming/MethodParameterName:
   Enabled: false
@@ -54,6 +56,8 @@ Style/FrozenStringLiteralComment:
   Enabled: true
   Exclude:
     - "spec/**/*"
+Style/Lambda:
+  Enabled: false
 Style/MultilineIfModifier:
   Enabled: false
 Style/MultilineTernaryOperator:
@@ -75,6 +79,8 @@ Style/TrailingCommaInArrayLiteral:
 Style/TrailingCommaInArguments:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/WordArray:
   Enabled: false
 
 
