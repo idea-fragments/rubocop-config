@@ -40,6 +40,9 @@ Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
     - "*.gemspec"
+    - "config/environments/production.rb"
+Metrics/ClassLength:
+  Max: 300
 Metrics/MethodLength:
   Enabled: false
 
