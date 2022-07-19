@@ -16,6 +16,8 @@ AllCops:
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
 Layout/FirstHashElementIndentation:
   Enabled: false
 Layout/HashAlignment:
@@ -59,6 +61,8 @@ Style/FrozenStringLiteralComment:
   Enabled: true
   Exclude:
     - "spec/**/*"
+Style/HashSyntax:
+  EnforcedShorthandSyntax: either
 Style/Lambda:
   Enabled: false
 Style/MultilineIfModifier:
