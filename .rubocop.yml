@@ -6,7 +6,7 @@ inherit_mode:
     - Exclude
 
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.1
   Exclude:
     - "Gemfile"
     - "Rakefile"
@@ -61,6 +61,8 @@ Style/FrozenStringLiteralComment:
   Enabled: true
   Exclude:
     - "spec/**/*"
+Style/HashEachMethods:
+  Enabled: false
 Style/HashSyntax:
   EnforcedShorthandSyntax: either
 Style/Lambda:
@@ -72,6 +74,8 @@ Style/MultilineTernaryOperator:
 Style/OneLineConditional:
   Enabled: false
 Style/RaiseArgs:
+  Enabled: false
+Style/RegexpLiteral:
   Enabled: false
 Style/StringLiterals:
   Enabled: true
