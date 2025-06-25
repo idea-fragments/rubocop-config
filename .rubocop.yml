@@ -16,8 +16,13 @@ AllCops:
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
+Layout/CaseIndentation:
+  EnforcedStyle: end
+  IndentOneStep: true
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 Layout/FirstHashElementIndentation:
@@ -39,66 +44,25 @@ Lint/MissingSuper:
   Enabled: false
 Lint/ScriptPermission:
   Enabled: false
-
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*"
     - "*.gemspec"
     - "config/environments/production.rb"
+    - "config/routes.rb"
 Metrics/ClassLength:
   Max: 300
 Metrics/MethodLength:
   Enabled: false
-
+Naming/AccessorMethodName:
+  Exclude:
+    - "app/jobs/application_job.rb"
 Naming/MethodParameterName:
   Enabled: false
 Naming/PredicateName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: true
-  Exclude:
-    - "spec/**/*"
-Style/HashEachMethods:
-  Enabled: false
-Style/HashSyntax:
-  EnforcedShorthandSyntax: either
-Style/Lambda:
-  Enabled: false
-Style/MultilineIfModifier:
-  Enabled: false
-Style/MultilineTernaryOperator:
-  Enabled: false
-Style/OneLineConditional:
-  Enabled: false
-Style/RaiseArgs:
-  Enabled: false
-Style/RegexpLiteral:
-  Enabled: false
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
-Style/SymbolArray:
-  Enabled: false
-Style/TrailingCommaInArrayLiteral:
-  Enabled: false
-Style/TrailingCommaInArguments:
-  Enabled: false
-Style/TrailingCommaInHashLiteral:
-  Enabled: false
-Style/WordArray:
-  Enabled: false
-
-
 RSpec/ContextWording:
   Enabled: false
 RSpec/DescribedClass:
@@ -115,13 +79,20 @@ RSpec/ImplicitExpect:
   Enabled: false
 RSpec/ImplicitSubject:
   Enabled: false
+RSpec/MatchArray:
+  Enabled: false
 RSpec/MessageSpies:
   Enabled: false
+RSpec/MetadataStyle:
+  Enabled: true
+  EnforcedStyle: symbol
 RSpec/MultipleExpectations:
   Enabled: false
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 RSpec/NestedGroups:
+  Enabled: false
+RSpec/NoExpectationExample:
   Enabled: false
 RSpec/NotToNot:
   Enabled: false
@@ -130,4 +101,50 @@ RSpec/ReceiveCounts:
 RSpec/StubbedMock:
   Enabled: false
 RSpec/VerifiedDoubles:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude:
+    - "spec/**/*"
+Style/GlobalStdStream:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashSyntax:
+  EnforcedShorthandSyntax: either
+Style/IfUnlessModifier:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/MultilineIfModifier:
+  Enabled: false
+Style/MultilineTernaryOperator:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/OneLineConditional:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/WordArray:
   Enabled: false
