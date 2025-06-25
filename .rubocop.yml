@@ -59,7 +59,7 @@ Naming/AccessorMethodName:
     - "app/jobs/application_job.rb"
 Naming/MethodParameterName:
   Enabled: false
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
