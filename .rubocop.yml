@@ -146,5 +146,7 @@ Style/TrailingCommaInArrayLiteral:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
   Enabled: false
+Style/TrailingUnderscoreVariable:
+  Enabled: false
 Style/WordArray:
   Enabled: false
